@@ -1,6 +1,6 @@
-# AgentPSO DeepMath Run Guide
+# AgentPSO Run Guide
 
-This folder contains the submission code needed to train AgentPSO on DeepMath and evaluate it on a held-out DeepMath test pool.
+This folder contains the submission code needed to train AgentPSO on DeepMath and evaluate it on a DeepMath test pool.
 
 ## 1. Setup
 
@@ -36,28 +36,10 @@ By default, this script will:
 
 ## 3. Common Options
 
-Skip dependency installation:
-
-```bash
-INSTALL_REQUIREMENTS=0 bash run_agentpso_deepmath.sh
-```
-
 Activate a conda environment inside the script:
 
 ```bash
 CONDA_ENV=AgentPSO bash run_agentpso_deepmath.sh
-```
-
-Run a fast smoke test without API calls:
-
-```bash
-BACKEND=mock NUM_ITERATIONS=1 TEST_LIMIT=20 bash run_agentpso_deepmath.sh
-```
-
-Use a custom run name:
-
-```bash
-RUN_NAME=my_deepmath_run bash run_agentpso_deepmath.sh
 ```
 
 Use an existing DeepMath parquet file:
@@ -105,13 +87,3 @@ Important files and folders:
 - `results/test/`: final test results
 - `scores/final_test_summary.json`: final test summary
 - `launch.log`: full launch log
-
-## 6. Compatibility Script
-
-The old script name is still available:
-
-```bash
-bash run_deepmath_train_math_test_gpt54mini.sh
-```
-
-It simply forwards to `run_agentpso_deepmath.sh`.
