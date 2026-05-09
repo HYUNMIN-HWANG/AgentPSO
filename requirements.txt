@@ -1,0 +1,14 @@
+# Core AgentPSO runtime.
+# This file is intended to work across Python versions. Packages that only
+# support newer Python versions use environment markers below.
+pyarrow>=14.0.0,<18.0.0
+huggingface-hub>=0.24.0,<1.0.0
+sympy>=1.13.0,<1.14.0
+pylatexenc>=2.10,<3.0
+antlr4-python3-runtime==4.11.0
+
+# High-recall math grading dependencies.
+# PyPI currently publishes these for Python >=3.10. On older Python versions
+# pip will skip them, and AgentPSO will use its local fallback grader.
+math-verify[antlr4-11-0]==0.9.0; python_version >= "3.10"
+latex2sympy2-extended[antlr4-11-0]==1.11.0; python_version >= "3.10"
