@@ -1,9 +1,9 @@
-# AgentPSO Run Guide
+# AgentPSO
 
 This repository contains the official implementation of **AgentPSO: Evolving Agent Reasoning Skill via Multi-agent Particle Swarm Optimization.**
 
 📄 Paper: https://arxiv.org/abs/2605.08704  
-🏆 Accepted at: The 3rd AI for Math Workshop at the 43rd International Conference on Machine Learning (ICML), Seoul, South Korea, 2026.
+🏆 Accepted to the **3rd AI for Math Workshop at the 43rd International Conference on Machine Learning (ICML, 2026).**
 
 This folder contains the submission code needed to train AgentPSO on DeepMath and evaluate it on a DeepMath test pool.
 
